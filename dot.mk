@@ -16,6 +16,9 @@
 
 $(call inherit-product, device/motorola/addison/full_addison.mk)
 
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := addison
 PRODUCT_NAME := dot_addison
